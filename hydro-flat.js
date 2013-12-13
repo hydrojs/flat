@@ -212,7 +212,7 @@ module.exports = function(hydro) {
   var suite = null;
 
   hydro.set('globals', 'suite', function(title) {
-    suite = hydro.addSuite(title, function(){});
+    suite = hydro.addSuite(title);
   });
 
   hydro.set('globals', 'test', function() {
