@@ -10,11 +10,9 @@ version](https://badge.fury.io/js/hydro-flat.png)](http://badge.fury.io/js/hydro
 Flat interface for [hydro](https://github.com/hydrojs/hydro)
 
 ```js
-suite('My module', function() {
-  test('it really works', function() {
+suite('My module');
 
-  });
-});
+test('it really works', function() {});
 ```
 
 ## Usage
