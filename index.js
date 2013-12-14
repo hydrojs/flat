@@ -9,7 +9,9 @@ module.exports = function(hydro) {
   var suite = null;
 
   hydro.set('globals', 'suite', function(title) {
+    if (hydro.stack.length !== 1) hydro.stack.shift();
     suite = hydro.addSuite(title);
+    hydro.stack.unshift(suite);
   });
 
   hydro.set('globals', 'test', function() {
